@@ -1,0 +1,122 @@
+{
+  "source": {
+    "file": "LDEM_80S_80MPP_ADJ.tiff",
+    "sizeBytes": 189158392,
+    "sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a"
+  },
+  "crs": {
+    "name": "Moon (2015) sphere, south polar stereographic",
+    "projection": "polar_stereographic_south",
+    "radius_m": 1737400.0,
+    "lat0_deg": -90.0,
+    "lon0_deg": 0.0,
+    "k0": 1.0,
+    "latitudeType": "planetocentric",
+    "wkt": null,
+    "geotiffKeys": {
+      "GTCitationGeoKey": "Moon (2015) - Sphere / Ocentric / South Polar",
+      "GeogCitationGeoKey": "GCS Name = Moon (2015) - Sphere / Ocentric|Datum = Moon (2015) - Sphere|Ellipsoid = Moon (2015) - Sphere|Primem = Reference Meridian|",
+      "ProjCoordTrans": "PolarStereographic (15)",
+      "ProjNatOriginLat": -90.0,
+      "ProjStraightVertPoleLong": 0.0,
+      "ProjScaleAtNatOrigin": 1.0,
+      "GeogSemiMajorAxis": 1737400.0,
+      "GeogSemiMinorAxis": 1737400.0,
+      "ProjFalseEasting": 0.0,
+      "ProjFalseNorthing": 0.0,
+      "ProjLinearUnits": "metre",
+      "RasterType": "PixelIsArea"
+    }
+  },
+  "raster": {
+    "width": 7600,
+    "height": 7600,
+    "dtype": "float32",
+    "nodata": "nan",
+    "pixelSize_m": 80.0,
+    "geotransform": [
+      80.0,
+      0.0,
+      -304000.0,
+      0.0,
+      -80.0,
+      304000.0
+    ],
+    "bounds_m": {
+      "left": -304000.0,
+      "bottom": -304000.0,
+      "right": 304000.0,
+      "top": 304000.0
+    },
+    "layout": "float32 little-endian, row-major, row 0 = north edge (max y), col 0 = west edge (min x)",
+    "elevationUnits": "metres relative to the 1,737,400 m lunar reference sphere"
+  },
+  "coverage": {
+    "extentKm": [
+      608.0,
+      608.0
+    ],
+    "fullLongitudeCoverageSouthOfLat": -80.00018353583529,
+    "cornerLat": -75.89380428852846
+  },
+  "elevation": {
+    "min_m": -7295.51708984375,
+    "max_m": 7026.3310546875,
+    "mean_m": -1500.646728515625,
+    "std_m": 2059.245361328125,
+    "nanCount": 0,
+    "percentiles_m": {
+      "p0_1": -6301.482910644531,
+      "p1": -5358.7421875,
+      "p5": -4549.0009765625,
+      "p50": -1721.763671875,
+      "p95": 2385.532763671872,
+      "p99": 4317.777851562496,
+      "p99_9": 6153.820833496404
+    },
+    "argmin": {
+      "row": 7274,
+      "col": 254,
+      "x_m": -283640.0,
+      "y_m": -277960.0,
+      "lat": -76.96002284120581,
+      "lon": -134.42053252909955,
+      "elevation_m": -7295.51708984375
+    },
+    "argmax": {
+      "row": 2238,
+      "col": 5082,
+      "x_m": 102600.0,
+      "y_m": 124920.0,
+      "lat": -84.67285910009272,
+      "lon": 39.39713932001922,
+      "elevation_m": 7026.3310546875
+    }
+  },
+  "levels": [
+    {
+      "id": "x8",
+      "file": "heightmap_950.f32",
+      "width": 950,
+      "height": 950,
+      "factor": 8,
+      "cellSizeM": 640.0,
+      "bytes": 3610000,
+      "min_m": -7242.48486328125,
+      "max_m": 7006.60693359375,
+      "emptyCellsFilled": 0
+    },
+    {
+      "id": "x5",
+      "file": "heightmap_1520.f32",
+      "width": 1520,
+      "height": 1520,
+      "factor": 5,
+      "cellSizeM": 400.0,
+      "bytes": 9241600,
+      "min_m": -7267.52294921875,
+      "max_m": 7019.98828125,
+      "emptyCellsFilled": 0
+    }
+  ]
+}

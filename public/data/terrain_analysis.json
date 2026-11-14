@@ -1,0 +1,487 @@
+{
+ "dem": "LDEM_80S_80MPP_ADJ.tiff",
+ "cell_m": 80.0,
+ "radius_m": 5000.0,
+ "sites": {
+  "shackleton-rim": {
+   "lat": -89.67,
+   "lon": 129.77999999999997,
+   "slope": {
+    "at_site_deg": 2.97,
+    "mean_deg": 18.04,
+    "median_deg": 19.25,
+    "p95_deg": 30.48,
+    "max_deg": 33.08,
+    "pct_below": {
+     "5": 12.9,
+     "10": 29.1,
+     "15": 41.8
+    },
+    "largest_safe_patch_km2": 21.459,
+    "site_patch_km2": 21.459,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 0.88,
+     "p95_m": 2.623,
+     "at_site_m": 1.751
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 2.134,
+     "p95_m": 6.179,
+     "at_site_m": 3.93
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 8.31,
+     "p95_m": 19.753,
+     "at_site_m": 6.417
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 24.66,
+     "p95_m": 51.053,
+     "at_site_m": 11.658
+    }
+   },
+   "relief": {
+    "elevation_m": -2787.3,
+    "min_m": -2868.8,
+    "max_m": -1498.2,
+    "relief_m": 1370.6,
+    "site_percentile": 7.6,
+    "tpi_1km_m": -14.9,
+    "tpi_radius_m": -374.2,
+    "position": "floor"
+   },
+   "horizon": {
+    "max_deg": 23.56,
+    "mean_deg": 21.34,
+    "pct_azimuths_above_2deg": 100.0
+   }
+  },
+  "de-gerlache-rim-1": {
+   "lat": -88.5,
+   "lon": -68.0,
+   "slope": {
+    "at_site_deg": 11.83,
+    "mean_deg": 15.51,
+    "median_deg": 16.21,
+    "p95_deg": 23.72,
+    "max_deg": 28.1,
+    "pct_below": {
+     "5": 4.4,
+     "10": 16.7,
+     "15": 40.7
+    },
+    "largest_safe_patch_km2": 6.886,
+    "site_patch_km2": 0.0,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 0.854,
+     "p95_m": 2.246,
+     "at_site_m": 5.274
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 1.882,
+     "p95_m": 5.205,
+     "at_site_m": 12.774
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 6.65,
+     "p95_m": 18.262,
+     "at_site_m": 18.314
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 20.772,
+     "p95_m": 53.105,
+     "at_site_m": 58.221
+    }
+   },
+   "relief": {
+    "elevation_m": 1500.4,
+    "min_m": 40.7,
+    "max_m": 1810.2,
+    "relief_m": 1769.5,
+    "site_percentile": 86.2,
+    "tpi_1km_m": 29.3,
+    "tpi_radius_m": 423.7,
+    "position": "crest"
+   },
+   "horizon": {
+    "max_deg": 16.45,
+    "mean_deg": 8.81,
+    "pct_azimuths_above_2deg": 100.0
+   }
+  },
+  "malapert-massif": {
+   "lat": -85.942,
+   "lon": -0.9439999999999884,
+   "slope": {
+    "at_site_deg": 3.15,
+    "mean_deg": 16.79,
+    "median_deg": 16.98,
+    "p95_deg": 27.0,
+    "max_deg": 29.67,
+    "pct_below": {
+     "5": 5.2,
+     "10": 21.5,
+     "15": 39.6
+    },
+    "largest_safe_patch_km2": 16.077,
+    "site_patch_km2": 16.077,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 0.867,
+     "p95_m": 2.479,
+     "at_site_m": 0.739
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 1.916,
+     "p95_m": 5.311,
+     "at_site_m": 2.006
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 6.093,
+     "p95_m": 15.056,
+     "at_site_m": 8.063
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 16.668,
+     "p95_m": 37.795,
+     "at_site_m": 17.139
+    }
+   },
+   "relief": {
+    "elevation_m": 4728.8,
+    "min_m": 2680.2,
+    "max_m": 5021.1,
+    "relief_m": 2340.9,
+    "site_percentile": 70.3,
+    "tpi_1km_m": 25.7,
+    "tpi_radius_m": 375.9,
+    "position": "slope"
+   },
+   "horizon": {
+    "max_deg": 5.74,
+    "mean_deg": 1.32,
+    "pct_azimuths_above_2deg": 51.7
+   }
+  },
+  "connecting-ridge": {
+   "lat": -89.53432,
+   "lon": -150.05232999999998,
+   "slope": {
+    "at_site_deg": 1.89,
+    "mean_deg": 10.29,
+    "median_deg": 9.75,
+    "p95_deg": 19.35,
+    "max_deg": 24.47,
+    "pct_below": {
+     "5": 13.8,
+     "10": 51.9,
+     "15": 82.1
+    },
+    "largest_safe_patch_km2": 36.026,
+    "site_patch_km2": 36.026,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 1.147,
+     "p95_m": 3.612,
+     "at_site_m": 0.97
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 2.654,
+     "p95_m": 8.354,
+     "at_site_m": 2.689
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 7.996,
+     "p95_m": 21.228,
+     "at_site_m": 12.087
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 21.562,
+     "p95_m": 43.965,
+     "at_site_m": 33.678
+    }
+   },
+   "relief": {
+    "elevation_m": 1653.0,
+    "min_m": 790.1,
+    "max_m": 1958.1,
+    "relief_m": 1167.9,
+    "site_percentile": 82.3,
+    "tpi_1km_m": 57.3,
+    "tpi_radius_m": 234.8,
+    "position": "slope"
+   },
+   "horizon": {
+    "max_deg": 4.89,
+    "mean_deg": 0.44,
+    "pct_azimuths_above_2deg": 18.3
+   }
+  },
+  "nobile-rim-1": {
+   "lat": -85.4381,
+   "lon": 37.3667,
+   "slope": {
+    "at_site_deg": 15.63,
+    "mean_deg": 15.85,
+    "median_deg": 15.43,
+    "p95_deg": 27.3,
+    "max_deg": 30.73,
+    "pct_below": {
+     "5": 9.0,
+     "10": 24.1,
+     "15": 48.0
+    },
+    "largest_safe_patch_km2": 12.045,
+    "site_patch_km2": 0.0,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 0.882,
+     "p95_m": 2.081,
+     "at_site_m": 0.722
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 1.978,
+     "p95_m": 4.87,
+     "at_site_m": 1.999
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 6.754,
+     "p95_m": 17.868,
+     "at_site_m": 8.371
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 21.199,
+     "p95_m": 52.062,
+     "at_site_m": 38.673
+    }
+   },
+   "relief": {
+    "elevation_m": 5937.8,
+    "min_m": 4162.6,
+    "max_m": 6775.2,
+    "relief_m": 2612.6,
+    "site_percentile": 66.2,
+    "tpi_1km_m": 26.9,
+    "tpi_radius_m": 204.5,
+    "position": "slope"
+   },
+   "horizon": {
+    "max_deg": 13.91,
+    "mean_deg": 5.36,
+    "pct_azimuths_above_2deg": 68.1
+   }
+  },
+  "haworth": {
+   "lat": -86.9,
+   "lon": -4.0,
+   "slope": {
+    "at_site_deg": 13.05,
+    "mean_deg": 14.65,
+    "median_deg": 14.74,
+    "p95_deg": 19.09,
+    "max_deg": 27.61,
+    "pct_below": {
+     "5": 0.4,
+     "10": 5.3,
+     "15": 53.9
+    },
+    "largest_safe_patch_km2": 1.53,
+    "site_patch_km2": 0.0,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 0.932,
+     "p95_m": 3.132,
+     "at_site_m": 2.062
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 1.874,
+     "p95_m": 6.735,
+     "at_site_m": 3.991
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 5.02,
+     "p95_m": 12.736,
+     "at_site_m": 9.27
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 10.753,
+     "p95_m": 22.88,
+     "at_site_m": 16.931
+    }
+   },
+   "relief": {
+    "elevation_m": -1577.5,
+    "min_m": -2610.6,
+    "max_m": -89.1,
+    "relief_m": 2521.5,
+    "site_percentile": 39.2,
+    "tpi_1km_m": -39.9,
+    "tpi_radius_m": -227.2,
+    "position": "slope"
+   },
+   "horizon": {
+    "max_deg": 17.73,
+    "mean_deg": 7.8,
+    "pct_azimuths_above_2deg": 66.4
+   }
+  },
+  "shoemaker": {
+   "lat": -88.1,
+   "lon": 44.900000000000006,
+   "slope": {
+    "at_site_deg": 2.44,
+    "mean_deg": 3.78,
+    "median_deg": 2.55,
+    "p95_deg": 11.59,
+    "max_deg": 22.83,
+    "pct_below": {
+     "5": 75.6,
+     "10": 92.3,
+     "15": 98.5
+    },
+    "largest_safe_patch_km2": 70.445,
+    "site_patch_km2": 70.445,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 1.114,
+     "p95_m": 3.77,
+     "at_site_m": 1.503
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 2.398,
+     "p95_m": 8.041,
+     "at_site_m": 4.308
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 5.871,
+     "p95_m": 15.697,
+     "at_site_m": 9.855
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 9.712,
+     "p95_m": 26.264,
+     "at_site_m": 11.369
+    }
+   },
+   "relief": {
+    "elevation_m": -3932.9,
+    "min_m": -4096.8,
+    "max_m": -3807.1,
+    "relief_m": 289.7,
+    "site_percentile": 25.4,
+    "tpi_1km_m": 7.1,
+    "tpi_radius_m": -10.0,
+    "position": "slope"
+   },
+   "horizon": {
+    "max_deg": 8.31,
+    "mean_deg": 6.93,
+    "pct_azimuths_above_2deg": 100.0
+   }
+  },
+  "amundsen-rim": {
+   "lat": -84.467,
+   "lon": 66.97,
+   "slope": {
+    "at_site_deg": 4.89,
+    "mean_deg": 12.22,
+    "median_deg": 12.29,
+    "p95_deg": 20.5,
+    "max_deg": 26.2,
+    "pct_below": {
+     "5": 7.0,
+     "10": 31.2,
+     "15": 74.7
+    },
+    "largest_safe_patch_km2": 21.152,
+    "site_patch_km2": 21.152,
+    "safe_slope_limit_deg": 10.0
+   },
+   "roughness": {
+    "200": {
+     "window_m": 240,
+     "median_m": 0.983,
+     "p95_m": 2.704,
+     "at_site_m": 0.483
+    },
+    "400": {
+     "window_m": 400,
+     "median_m": 2.362,
+     "p95_m": 6.414,
+     "at_site_m": 1.355
+    },
+    "800": {
+     "window_m": 880,
+     "median_m": 8.337,
+     "p95_m": 20.869,
+     "at_site_m": 5.519
+    },
+    "1600": {
+     "window_m": 1680,
+     "median_m": 22.625,
+     "p95_m": 49.032,
+     "at_site_m": 23.953
+    }
+   },
+   "relief": {
+    "elevation_m": 764.1,
+    "min_m": -531.0,
+    "max_m": 1178.9,
+    "relief_m": 1709.9,
+    "site_percentile": 72.3,
+    "tpi_1km_m": 26.9,
+    "tpi_radius_m": 218.8,
+    "position": "slope"
+   },
+   "horizon": {
+    "max_deg": 7.77,
+    "mean_deg": 2.69,
+    "pct_azimuths_above_2deg": 50.6
+   }
+  }
+ }
+}

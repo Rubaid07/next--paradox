@@ -1,0 +1,300 @@
+{
+  "sites": [
+    {
+      "id": "shackleton-rim",
+      "name": "Shackleton Rim",
+      "artemisRegion": null,
+      "positionKind": "feature_center",
+      "verification": "primary",
+      "source": {
+        "label": "USGS/IAU Gazetteer of Planetary Nomenclature, Shackleton (Feature ID 5450), first listed center",
+        "url": "https://planetarynames.wr.usgs.gov/Feature/5450"
+      },
+      "note": "Marker sits at the IAU crater center, not on the rim crest. No published landing-site coordinate named 'Shackleton Rim' was found; NASA's nearest named region is 'Peak Near Shackleton'. The Gazetteer lists three differing center positions for Shackleton; the first (-89.67, 129.78) is used.",
+      "lat": -89.67,
+      "lon": 129.77999999999997,
+      "projected": {
+        "x_m": 7690.243761836725,
+        "y_m": -6402.723035824016
+      },
+      "distanceFromPole_km": 10.006733302628794,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": 7.690243761836725,
+        "z_km": 6.402723035824016
+      },
+      "pixel": {
+        "col": 3896.128047022959,
+        "row": 3880.0340379478002
+      },
+      "elevation_m": -2788.36474609375,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": -2868.79736328125,
+        "max_m": -1504.9866943359375,
+        "mean_m": -2414.639404296875,
+        "samples": 12281
+      }
+    },
+    {
+      "id": "de-gerlache-rim-1",
+      "name": "de Gerlache Rim 1",
+      "artemisRegion": "de Gerlache Rim 1 (NASA 2022 candidate region)",
+      "positionKind": "candidate_landing_site",
+      "verification": "secondary",
+      "source": {
+        "label": "Lunar Resources Registry / LPI/USRA literature: de Gerlache Rim 1 region, eastern rim of de Gerlache crater (~88.5\u00b0S, 68\u00b0W)",
+        "url": "https://www.lpi.usra.edu/lunar/artemis/"
+      },
+      "note": "Representative point on the eastern rim of de Gerlache crater for the NASA Artemis 2022 candidate landing region. Coordinates are approximate (secondary source); precise candidate-site coordinates are in the Wueller et al. (2026) appendix and Zenodo dataset (doi:10.5281/zenodo.17084058).",
+      "lat": -88.5,
+      "lon": -68.0,
+      "projected": {
+        "x_m": -42218.0,
+        "y_m": 17055.0
+      },
+      "distanceFromPole_km": 45.138,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": -42.218,
+        "z_km": -17.055
+      },
+      "pixel": {
+        "col": 3272.2,
+        "row": 3582.4
+      },
+      "elevation_m": 1501.6514657728155,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": 48.85690689086914,
+        "max_m": 1799.76806640625,
+        "mean_m": 1075.3737656372944,
+        "samples": 489
+      }
+    },
+    {
+      "id": "malapert-massif",
+      "name": "Malapert Massif",
+      "artemisRegion": "Malapert Massif (NASA 2022 and 2024 candidate region)",
+      "positionKind": "candidate_landing_site",
+      "verification": "primary",
+      "source": {
+        "label": "Wueller et al. (2026), JGR Planets, Appendix A, site MMA01 ('Mons Malapert')",
+        "url": "https://doi.org/10.1029/2025JE009434"
+      },
+      "note": "One representative candidate landing site (MMA01) inside the ~15 x 15 km candidate region, not the region center.",
+      "lat": -85.942,
+      "lon": -0.9439999999999884,
+      "projected": {
+        "x_m": -2028.1521755487306,
+        "y_m": 123086.91195769244
+      },
+      "distanceFromPole_km": 123.10362016012328,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": -2.0281521755487306,
+        "z_km": -123.08691195769244
+      },
+      "pixel": {
+        "col": 3774.648097805641,
+        "row": 2261.4136005288447
+      },
+      "elevation_m": 4728.2548828125,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": 2680.185302734375,
+        "max_m": 5021.11376953125,
+        "mean_m": 4353.28759765625,
+        "samples": 12281
+      }
+    },
+    {
+      "id": "connecting-ridge",
+      "name": "Connecting Ridge",
+      "artemisRegion": "Connecting Ridge (NASA 2022 candidate region)",
+      "positionKind": "candidate_landing_site",
+      "verification": "primary",
+      "source": {
+        "label": "LPSC 2024 abstract #1695, 'Candidate landing sites for Artemis 3 in two NASA candidate landing regions'",
+        "url": "https://www.hou.usra.edu/meetings/lpsc2024/pdf/1695.pdf"
+      },
+      "note": "Center of a 2 km radius candidate site proposed within the Connecting Ridge region. Published as 209.94767 degrees E (equal to -150.05233).",
+      "lat": -89.53432,
+      "lon": -150.05232999999998,
+      "projected": {
+        "x_m": -7049.355538480259,
+        "y_m": -12235.636339553814
+      },
+      "distanceFromPole_km": 14.121055560464033,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": -7.04935553848026,
+        "z_km": 12.235636339553814
+      },
+      "pixel": {
+        "col": 3711.8830557689967,
+        "row": 3952.9454542444228
+      },
+      "elevation_m": 1652.5611572265625,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": 788.1218872070312,
+        "max_m": 1958.05419921875,
+        "mean_m": 1418.1478271484375,
+        "samples": 12281
+      }
+    },
+    {
+      "id": "nobile-rim-1",
+      "name": "Nobile Rim 1",
+      "artemisRegion": "Nobile Rim 1 (NASA 2022 candidate region)",
+      "positionKind": "candidate_landing_site",
+      "verification": "secondary",
+      "source": {
+        "label": "NASA Artemis candidate region center: Nobile Rim 1, ~85.44\u00b0S, 37.37\u00b0E (secondary source; see Wueller et al. 2026 for precise site coordinates)",
+        "url": "https://www.nasa.gov/feature/artemis-iii-candidate-landing-regions"
+      },
+      "note": "Region center for the Nobile Rim 1 NASA candidate landing region on the rim of Nobile crater. Coordinates are approximate (secondary source); the region lies on the southwestern rim of Nobile crater (IAU crater center -85.28, 53.27). Precise candidate-site coordinates are in the Wueller et al. (2026) Zenodo dataset (doi:10.5281/zenodo.17084058).",
+      "lat": -85.4381,
+      "lon": 37.3667,
+      "projected": {
+        "x_m": 83920.0,
+        "y_m": 109990.0
+      },
+      "distanceFromPole_km": 138.35,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": 83.92,
+        "z_km": -109.99
+      },
+      "pixel": {
+        "col": 4799.0,
+        "row": 2426.4
+      },
+      "elevation_m": 5936.98023198331,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": 4109.669921875,
+        "max_m": 6765.32568359375,
+        "mean_m": 5690.412116364711,
+        "samples": 489
+      }
+    },
+    {
+      "id": "haworth",
+      "name": "Haworth",
+      "artemisRegion": "Haworth (NASA 2022 and 2024 candidate region)",
+      "positionKind": "feature_center",
+      "verification": "secondary",
+      "source": {
+        "label": "USGS Gazetteer of Planetary Nomenclature, Haworth (Feature ID 14502): center ~86.9\u00b0S, 4.0\u00b0W",
+        "url": "https://planetarynames.wr.usgs.gov/Feature/14502"
+      },
+      "note": "Crater center used as the representative point for the Haworth NASA Artemis candidate landing region. USGS Gazetteer Feature ID 14502. Coordinates are from secondary sources (Wikipedia/USGS); verify directly at the Gazetteer URL.",
+      "lat": -86.9,
+      "lon": -4.0,
+      "projected": {
+        "x_m": -6558.0,
+        "y_m": 93778.0
+      },
+      "distanceFromPole_km": 94.007,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": -6.558,
+        "z_km": -93.778
+      },
+      "pixel": {
+        "col": 3758.0,
+        "row": 2628.0
+      },
+      "elevation_m": -1568.3988090377534,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": -2567.271484375,
+        "max_m": -118.35860443115234,
+        "mean_m": -1349.7205871238787,
+        "samples": 489
+      }
+    },
+    {
+      "id": "shoemaker",
+      "name": "Shoemaker",
+      "artemisRegion": null,
+      "positionKind": "feature_center",
+      "verification": "secondary",
+      "source": {
+        "label": "Wikipedia infobox, Shoemaker (lunar crater): 88 06 S, 44 54 E (value originates from the IAU Gazetteer; USGS page not retrieved)",
+        "url": "https://en.wikipedia.org/wiki/Shoemaker_(lunar_crater)"
+      },
+      "note": "Crater center (diameter about 51 km). Secondary source; replace with the USGS Gazetteer value if you need primary-source precision.",
+      "lat": -88.1,
+      "lon": 44.900000000000006,
+      "projected": {
+        "x_m": 40672.07010420125,
+        "y_m": 40814.290777897026
+      },
+      "distanceFromPole_km": 57.61964611366328,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": 40.672070104201254,
+        "z_km": -40.81429077789703
+      },
+      "pixel": {
+        "col": 4308.400876302516,
+        "row": 3289.8213652762875
+      },
+      "elevation_m": -3932.15869140625,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": -4096.79541015625,
+        "max_m": -3807.05810546875,
+        "mean_m": -3922.806396484375,
+        "samples": 12281
+      }
+    },
+    {
+      "id": "amundsen-rim",
+      "name": "Amundsen Rim",
+      "artemisRegion": "Amundsen Rim (NASA 2022 candidate region)",
+      "positionKind": "candidate_landing_site",
+      "verification": "primary",
+      "source": {
+        "label": "Wueller et al. (2026), JGR Planets, Appendix A, site AR01",
+        "url": "https://doi.org/10.1029/2025JE009434"
+      },
+      "note": "One representative candidate landing site (AR01) inside the ~15 x 15 km candidate region, not the region center.",
+      "lat": -84.467,
+      "lon": 66.97,
+      "projected": {
+        "x_m": 154527.2341791753,
+        "y_m": 65688.42915551123
+      },
+      "distanceFromPole_km": 167.90960612181874,
+      "status": "placed",
+      "statusReason": "Inside DEM coverage.",
+      "world": {
+        "x_km": 154.5272341791753,
+        "z_km": -65.68842915551123
+      },
+      "pixel": {
+        "col": 5731.590427239692,
+        "row": 2978.8946355561097
+      },
+      "elevation_m": 763.6624145507812,
+      "local": {
+        "radius_m": 5000.0,
+        "min_m": -530.9509887695312,
+        "max_m": 1178.9049072265625,
+        "mean_m": 543.5814819335938,
+        "samples": 12281
+      }
+    }
+  ]
+}
