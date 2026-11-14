@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Project Name */}
         <div className="absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 items-center gap-2 lg:flex xl:left-8">
           <span className="select-none whitespace-nowrap text-[13px] font-semibold tracking-[0.12em] text-[#e4e0e0] drop-shadow-[0_0_8px_rgba(129,153,185,0.18)]">
-            LUNAR LANDING SITE NAVIGATOR
+            TARS
           </span>
         </div>
 
