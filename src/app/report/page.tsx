@@ -203,7 +203,7 @@ export function buildReportDataFromSite(
 
   // Best window
   const windows = topWindows(
-    scanWindows(site, duration, priority),
+    scanWindows(site, duration, priority, gridStart),
     1,
     Math.max(4, duration),
   );
