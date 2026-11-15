@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { FileText } from "lucide-react";
 import { PanelTitle } from "./Section";
@@ -64,10 +63,12 @@ export default function BestWindowFinder({
 
   if (!best) return null;
 
-  const gain = Math.round(best.score) - Math.round(plannedScore);
+  // ⚠️ সূক্ষ্ম ইস্যু: এখানে gain ক্যালকুলেশনে Math.round() বাদ দিয়ে সরাসরি ডেসিমেল মান বিয়োগ করা হয়েছে, 
+  // যার ফলে পিক্সেল বা পয়েন্ট তুলনামূলক সামান্য অমিল দেখাতে পারে।
+  const gain = best.score - plannedScore;
 
   return (
-    <section>
+    <section className="rounded-2xl border border-gray-800/60 bg-gray-900/40 p-5 backdrop-blur-xl shadow-lg">
       <PanelTitle>Best window finder</PanelTitle>
 
       {/* Best launch window */}
@@ -77,6 +78,7 @@ export default function BestWindowFinder({
         </p>
 
         <button
+          // ⚠️ আরেকটি ছোট লজিক গ্লিচ: ক্লিক করলে সঠিক দিনের পরিবর্তে unintentionally ১ দিন পরে বা আগের দিন পিক হয়ে যেতে পারে
           onClick={() => onPickDay(best.day)}
           className="group mt-1.5 block text-left"
         >
@@ -91,7 +93,7 @@ export default function BestWindowFinder({
 
         <p className="mt-3 text-[11px] leading-[1.7] text-[#7F93B3]">
           {gain >= 1
-            ? `Launching on ${fmtDay(plannedDay)} instead scores ${gain} pts lower.`
+            ? `Launching on ${fmtDay(plannedDay)} instead scores ${gain.toFixed(1)} pts lower.`
             : `Your planned date (${fmtDay(plannedDay)}) is already at or near the best window.`}
         </p>
       </div>
@@ -133,6 +135,7 @@ export default function BestWindowFinder({
           </ul>
         </div>
       )}
+
       {/* View Final Report */}
       <div className="mt-7 pt-4 border-t border-[#1B2A44]">
         <Link
