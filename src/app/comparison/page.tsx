@@ -119,16 +119,24 @@ export default function MissionComparison() {
 
   if (error) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-black p-8 text-center text-sm text-[#E8EAED]">
-        <p>
-          Could not load <code>/data/site_series.json</code>. Put the file in <code>public/data/</code>.
-          <span className="mt-2 block text-[#7F93B3]">{error}</span>
-        </p>
+      <main className="flex min-h-screen items-center justify-center bg-gray-950 p-8 text-center text-sm text-[#E8EAED]">
+        <div className="rounded-xl border border-red-500/20 bg-red-500/10 p-6 backdrop-blur-md">
+          <p className="font-medium text-red-400">Could not load <code>/data/site_series.json</code>.</p>
+          <p className="mt-1 text-xs text-gray-400">Put the file in <code>public/data/</code>.</p>
+          <span className="mt-3 block text-xs text-[#7F93B3]">{error}</span>
+        </div>
       </main>
     );
   }
   if (!series || !delayAnalysis || !team || !selSite || !atEffective.length) {
-    return <main className="flex min-h-screen items-center justify-center bg-black text-sm text-[#7F93B3]">Loading mission data…</main>;
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-gray-950 text-sm text-[#7F93B3]">
+        <div className="flex items-center gap-3 animate-pulse">
+          <div className="h-4 w-4 rounded-full bg-blue-500/50 animate-ping"></div>
+          <span>Loading mission data…</span>
+        </div>
+      </main>
+    );
   }
 
   const selNow = atEffective[selIdx].m;
@@ -144,17 +152,26 @@ export default function MissionComparison() {
   const scoresById = Object.fromEntries(atEffective.map(({ site, m }) => [site.id, scoreOf(m, priority)]));
 
   return (
-    <main className="min-h-screen bg-black text-[#E8EAED]">
-      <div className="mx-auto max-w-[1600px] rounded-lg bg-black bg-[radial-gradient(ellipse_at_50%_0%,rgba(77,184,255,0.06),transparent_60%)] px-4 pb-24 pt-10 sm:px-8">
-        <header className="relative mb-2 flex items-center justify-center">
-          <h1 className="text-[13px] font-semibold tracking-[0.3em] sm:text-base">MISSION COMPARISON</h1>
+    <main className="min-h-screen bg-[#030712] text-[#E8EAED] selection:bg-blue-500 selection:text-white">
+      <div className="mx-auto max-w-[1680px] px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+        
+        {/* Header Section */}
+        <header className="relative mb-8 text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-1.5 mb-3 backdrop-blur-md">
+            <span className="h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>
+            <span className="text-[11px] font-bold tracking-[0.25em] text-blue-400 uppercase">Lunar Mission Control</span>
+          </div>
+          <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl text-white">MISSION COMPARISON</h1>
+          <p className="mt-2 text-xs sm:text-sm text-gray-400 max-w-2xl mx-auto">
+            Computed per site: DE421 Sun/Earth + libration · 400 m LOLA DEM horizon mask · DSN visibility · hourly, 2026-11-10 → 2028-12-31
+          </p>
         </header>
-        <p className="mb-8 text-center text-[12px] text-[#9099a5]">
-          Computed per site: DE421 Sun/Earth + libration · 400 m LOLA DEM horizon mask · DSN visibility · hourly, 2026-11-10 → 2028-12-31
-        </p>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[260px_minmax(0,1fr)_290px] lg:gap-10">
-          <aside className="order-2 lg:order-1">
+        {/* Main Dashboard Grid */}
+        <div className="grid grid-cols-1 gap-6 xl:grid-cols-[280px_minmax(0,1fr)_320px] lg:gap-8">
+          
+          {/* Left Sidebar: Priority & Settings */}
+          <aside className="order-2 xl:order-1 rounded-2xl border border-gray-800/60 bg-gray-900/40 p-4 backdrop-blur-xl shadow-lg">
             <MissionPriority
               priority={priority}
               onPriority={setPriority}
@@ -166,27 +183,34 @@ export default function MissionComparison() {
             />
           </aside>
 
-          <section className="order-1 flex min-w-0 flex-col gap-6 lg:order-2">
-            <SummaryGauges score={selScoreNow} sun={selNow.sun} commHours={selNow.commHours} risk={selNow.risk} />
-            <SiteDateHeatmap
-              sites={sites}
-              grid={grid}
-              metric={metric}
-              onMetric={setMetric}
-              priority={priority}
-              selectedId={selSite.id}
-              gridStart={gridStart}
-              plannedDay={plannedDay}
-              effectiveDay={effectiveDay}
-              onPick={(id, day) => {
-                setSelectedId(id);
-                setPickedDay(day);
-                setDelay(0);
-              }}
-            />
+          {/* Central Workspace: Gauges & Heatmap */}
+          <section className="order-1 flex min-w-0 flex-col gap-6 xl:order-2">
+            <div className="rounded-2xl border border-gray-800/60 bg-gray-900/40 p-5 backdrop-blur-xl shadow-lg">
+              <SummaryGauges score={selScoreNow} sun={selNow.sun} commHours={selNow.commHours} risk={selNow.risk} />
+            </div>
+            
+            <div className="rounded-2xl border border-gray-800/60 bg-gray-900/40 p-5 backdrop-blur-xl shadow-lg">
+              <SiteDateHeatmap
+                sites={sites}
+                grid={grid}
+                metric={metric}
+                onMetric={setMetric}
+                priority={priority}
+                selectedId={selSite.id}
+                gridStart={gridStart}
+                plannedDay={plannedDay}
+                effectiveDay={effectiveDay}
+                onPick={(id, day) => {
+                  setSelectedId(id);
+                  setPickedDay(day);
+                  setDelay(0);
+                }}
+              />
+            </div>
           </section>
 
-          <aside className="order-3">
+          {/* Right Sidebar: Window Finder */}
+          <aside className="order-3 rounded-2xl border border-gray-800/60 bg-gray-900/40 p-4 backdrop-blur-xl shadow-lg">
             <BestWindowFinder
               siteName={selSite.name}
               duration={duration}
@@ -203,7 +227,8 @@ export default function MissionComparison() {
           </aside>
         </div>
 
-        <div className="mt-12 space-y-12">
+        {/* Bottom Section: Science & Engineering Comparison */}
+        <div className="mt-8 rounded-2xl border border-gray-800/60 bg-gray-900/40 p-6 backdrop-blur-xl shadow-lg">
           <ScienceEngineeringCompare
             rows={team.rows}
             metrics={metricsById}
@@ -221,11 +246,16 @@ export default function MissionComparison() {
             duration={duration}
           />
         </div>
-        <p className="mt-10 text-center text-[10px] leading-relaxed text-[#5C636D]">
-          Model assumptions: {series.meta.mast_m} m mast · battery {BATTERY_HOURS} h, array = {GEN_TO_LOAD}× load · DSN min. elevation {series.meta.dsn_min_elev_deg}° · continuity = powered and Earth contact within {AUTONOMY_LIMIT_H} h.
-          {sites.filter((s) => s.analysisNote.startsWith("highest")).map((s) => ` ${s.name} is evaluated at the rim crest (${s.lat.toFixed(2)}°, ${s.lon.toFixed(2)}°), not the crater centre.`)}
-          {" "}DEM is 400 m resolution; slope and relief are coarse-scale values.
-        </p>
+
+        {/* Footer Info */}
+        <footer className="mt-10 rounded-xl border border-gray-800/40 bg-gray-950/40 p-4 text-center text-[11px] leading-relaxed text-gray-500">
+          <p>
+            Model assumptions: {series.meta.mast_m} m mast · battery {BATTERY_HOURS} h, array = {GEN_TO_LOAD}× load · DSN min. elevation {series.meta.dsn_min_elev_deg}° · continuity = powered and Earth contact within {AUTONOMY_LIMIT_H} h.
+            {sites.filter((s) => s.analysisNote.startsWith("highest")).map((s) => ` ${s.name} is evaluated at the rim crest (${s.lat.toFixed(2)}°, ${s.lon.toFixed(2)}°), not the crater centre.`)}
+            {" "}DEM is 400 m resolution; slope and relief are coarse-scale values.
+          </p>
+        </footer>
+
       </div>
     </main>
   );
